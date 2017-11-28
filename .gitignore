@@ -45,3 +45,19 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Unity Stuff
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+
+*.csproj
+*.unityproj
+*.sln
+*.tmp
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb

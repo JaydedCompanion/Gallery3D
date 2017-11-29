@@ -8,7 +8,7 @@ public class ViewerControl : MonoBehaviour {
 
 	public Floorplan CurrentFloorplan;
 	public int CurrentImage;
-	public int lastDir;
+	public int lastDir = 1;
 
 	// Use this for initialization
 	void Start () {

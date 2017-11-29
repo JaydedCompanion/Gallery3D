@@ -4,10 +4,11 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ViewerControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CanvasHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\FloorplanHandler.cs" Line="53" Column="4" />
-      <File FileName="Assets\Scripts\ViewerControl.cs" Line="15" Column="18" />
+      <File FileName="Assets\Scripts\Floorplan.cs" Line="53" Column="18" />
+      <File FileName="Assets\Scripts\ViewerControl.cs" Line="52" Column="9" />
+      <File FileName="Assets\Scripts\CanvasHandler.cs" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

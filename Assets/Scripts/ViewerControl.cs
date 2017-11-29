@@ -53,7 +53,7 @@ public class ViewerControl : MonoBehaviour {
 			if (destination.name.Contains("Skip"))
 				if (lastDir > 0)
 					NextImage();
-				else
+			else if (lastDir < 0)
 					PrevImage();
 
 		if (isSame(transform.position, destination.position, 0.00001f))
@@ -64,7 +64,8 @@ public class ViewerControl : MonoBehaviour {
 
 	}
 
-	private void PrevImage() {
+	public void PrevImage() {
+		lastDir = -1;
 		//If we're not on the first image, simply decrease the image index
 		if (CurrentImage > 0)
 			CurrentImage--;
@@ -73,15 +74,17 @@ public class ViewerControl : MonoBehaviour {
 			if (CurrentFloorplan.prev) {
 				CurrentFloorplan = CurrentFloorplan.prev;
 				CurrentImage = CurrentFloorplan.Waypoints.Length - 1;
-			} else
+			} else {
 				//TODO Add proper UI for this scenario
 				Debug.Log("First image, cannot reverse");
+				lastDir = 0;
+			}
 		}
 		AudioManager.playWoosh ();
-		lastDir = -1;
 	}
 
-	private void NextImage() {
+	public void NextImage() {
+		lastDir = 1;
 		//If we're not on the last image, simply increase the image index
 		if (CurrentImage < CurrentFloorplan.Waypoints.Length - 1)
 			CurrentImage++;
@@ -91,12 +94,13 @@ public class ViewerControl : MonoBehaviour {
 			if (CurrentFloorplan.next) {
 				CurrentFloorplan = CurrentFloorplan.next;
 				CurrentImage = 0;
-			} else
+			} else {
 				//TODO Add proper UI for this scenario
 				Debug.Log("Last image, cannot proceed");
+				lastDir = 0;
+			}
 		}
 		AudioManager.playWoosh ();
-		lastDir = 1;
 	}
 
 	public bool isSame(Quaternion val1, Quaternion val2, float f) {

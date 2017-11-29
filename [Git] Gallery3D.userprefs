@@ -1,15 +1,15 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{EA442CB9-74B5-DAEC-7F98-A8949E87A41D}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AudioManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="45" Column="49" />
+      <File FileName="Assets/Scripts/ViewerControl.cs" Line="20" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CanvasHandler.cs">
-    <Files>
-      <File FileName="Assets\Scripts\Floorplan.cs" Line="53" Column="18" />
-      <File FileName="Assets\Scripts\ViewerControl.cs" Line="52" Column="9" />
-      <File FileName="Assets\Scripts\CanvasHandler.cs" Line="7" Column="2" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

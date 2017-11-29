@@ -10,10 +10,14 @@ public class ViewerControl : MonoBehaviour {
 	public int CurrentImage;
 	public int lastDir = 1;
 
+	public static ViewerControl Instance;
+
 	// Use this for initialization
 	void Start () {
 
 		CurrentFloorplan = Floorplan.FirstFloorplan;
+
+		Instance = this;
 		
 	}
 	
@@ -73,6 +77,7 @@ public class ViewerControl : MonoBehaviour {
 				//TODO Add proper UI for this scenario
 				Debug.Log("First image, cannot reverse");
 		}
+		AudioManager.playWoosh ();
 		lastDir = -1;
 	}
 
@@ -90,6 +95,7 @@ public class ViewerControl : MonoBehaviour {
 				//TODO Add proper UI for this scenario
 				Debug.Log("Last image, cannot proceed");
 		}
+		AudioManager.playWoosh ();
 		lastDir = 1;
 	}
 

@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour {
 		instance.clip = sound;
 		instance.Play ();
 
-		Destroy (instance, instance.clip.length + 1f);
+		Destroy (instance.gameObject, instance.clip.length + 1f);
 
 		return instance;
 

@@ -12,8 +12,12 @@ public class Floorplan : MonoBehaviour {
 	public Floorplan next;
 	public Floorplan prev;
 
-	private Transform StartPos;
-	private Transform EndPos;
+	[HideInInspector]
+	public Transform StartPos;
+	[HideInInspector]
+	public Transform EndPos;
+	[HideInInspector]
+	public Transform PaintingHolder;
 
 	public static Floorplan FirstFloorplan;
 
@@ -22,21 +26,30 @@ public class Floorplan : MonoBehaviour {
 
 		if (!Application.isPlaying)
 			return;
+
+		setStartEndPos();
 		
+	}
+
+	public void setStartEndPos() {
+
 		//Get the start and end points of this floorplan
-		foreach (Transform pos in transform.GetChild(0).GetComponentInChildren <Transform>()) {
+		foreach (Transform pos in transform.GetComponentInChildren<Transform>()) {
 			if (pos.name == "Start")
 				StartPos = pos;
 			else if (pos.name == "End")
 				EndPos = pos;
+			else if (pos.name == "Paintings")
+				PaintingHolder = pos;
 		}
-		
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		//Render lines and rays for in-editor flow visualization
+		//Also, count the number of non-skip waypoints available in this floorplan
 		for (int i = 0; i < Waypoints.Length; i++){
 			Debug.DrawRay(Waypoints[i].position, Waypoints[i].right * 0.5f, Waypoints[i].name.Contains ("Skip") ? Color.grey : Color.blue);
 			Debug.DrawRay(Waypoints[i].position, -Waypoints[i].up * 2, Waypoints[i].name.Contains ("Skip") ? Color.grey : Color.blue);
@@ -76,6 +89,17 @@ public class Floorplan : MonoBehaviour {
 					Debug.LogError("Could not find StarPos nor EndPos");
 			
 		}
+
+	}
+
+	public int getImageCount () {
+
+		int images = 0;
+		for (int i = 0; i<Waypoints.Length; i++)
+			if (!Waypoints[i].name.Contains("Skip"))
+				images++;
+
+		return images;
 
 	}
 

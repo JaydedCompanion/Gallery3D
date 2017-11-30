@@ -11,27 +11,37 @@ ModelImporter:
     100006: FP_Wings
     100008: FP_Hex
     100010: FP_Mega
+    100012: FP_End
+    100014: FP_Wall
     400000: //RootNode
     400002: FP_Corridor
     400004: FP_Wing
     400006: FP_Wings
     400008: FP_Hex
     400010: FP_Mega
+    400012: FP_End
+    400014: FP_Wall
     2300000: FP_Corridor
     2300002: FP_Wing
     2300004: FP_Wings
     2300006: FP_Hex
     2300008: FP_Mega
+    2300010: FP_End
+    2300012: FP_Wall
     3300000: FP_Corridor
     3300002: FP_Wing
     3300004: FP_Wings
     3300006: FP_Hex
     3300008: FP_Mega
+    3300010: FP_End
+    3300012: FP_Wall
     4300000: FP_Wings
     4300002: FP_Wing
     4300004: FP_Corridor
     4300006: FP_Mega
     4300008: FP_Hex
+    4300010: FP_End
+    4300012: FP_Wall
     7400000: Default Take
     9500000: //RootNode
   materials:

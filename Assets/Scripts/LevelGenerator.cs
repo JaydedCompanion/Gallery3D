@@ -49,7 +49,7 @@ public class LevelGenerator : MonoBehaviour {
 			} catch {
 				continue;
 			}
-			if (gObj.GetComponent<Floorplan>() && !FloorplanPrefabs.ContainsKey(gObj.GetComponent<Floorplan>()))
+			if (gObj.name != "FP_Wall" && gObj.GetComponent<Floorplan>() && !FloorplanPrefabs.ContainsKey(gObj.GetComponent<Floorplan>()))
 				FloorplanPrefabs.Add(gObj.GetComponent<Floorplan>(), gObj.GetComponent<Floorplan>().getImageCount());
 
 		}
@@ -59,13 +59,31 @@ public class LevelGenerator : MonoBehaviour {
 	public List<Floorplan> GenerateLevelLayout(int Paintings) {
 
 		int paintings = 0;
+		int startFPID = 0;
 
 		List<Floorplan> FloorplanList = FloorplanPrefabs.Select(pair => pair.Key).ToList();
 		List<Floorplan> layout = new List<Floorplan>();
 
+		foreach (Floorplan fp in FloorplanList)
+			if (fp.name == "FP_End") {
+				startFPID = FloorplanList.IndexOf(fp);
+				break;
+			}
+
 		while (paintings < Paintings) {
 
-			Floorplan next = FloorplanList[Random.Range (0, FloorplanList.Count)];
+			Floorplan next = FloorplanList[startFPID];
+
+			if (layout.Count > 0){
+
+				int rand = startFPID;
+
+				while (rand == startFPID)
+					rand = Random.Range(0, FloorplanList.Count);
+
+				next = FloorplanList[rand];
+			
+			}
 
 			layout.Add(next);
 
@@ -74,6 +92,9 @@ public class LevelGenerator : MonoBehaviour {
 			paintings += next.getImageCount();
 
 		}
+
+		//Add a wall at the end of the level layout
+		layout.Add(((GameObject)Resources.Load("Floorplans/FP_Wall", typeof(GameObject))).GetComponent<Floorplan>());
 
 		return layout;
 

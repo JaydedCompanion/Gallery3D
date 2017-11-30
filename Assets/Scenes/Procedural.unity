@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.1254902}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -677,11 +677,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.46000075
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.5700006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -689,7 +689,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -697,10 +697,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048983581405082, guid: d10c78dbdd2e1aa4fbe1e045317ff34b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

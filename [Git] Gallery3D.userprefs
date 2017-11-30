@@ -1,14 +1,15 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{EA442CB9-74B5-DAEC-7F98-A8949E87A41D}|Unit Tests">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelGenerator.cs">
     <Files>
       <File FileName="Assets\Scripts\AudioManager.cs" Line="45" Column="31" />
-      <File FileName="Assets\Scripts\ViewerControl.cs" Line="100" Column="16" />
-      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="68" Column="71" />
+      <File FileName="Assets\Scripts\ViewerControl.cs" Line="48" Column="68" />
+      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="26" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

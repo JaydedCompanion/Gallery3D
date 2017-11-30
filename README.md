@@ -4,7 +4,7 @@ Generate a 3D gallery/museum-like environment from a folder full of images. Powe
 
 ## How To Use
 
-~User-picked images are not yet supported~
+**User-picked images are not yet supported**
 
 ## Deployment
 

@@ -161,26 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39df18ebc1c2201479f95f17eb17d34d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paintings:
-  - {fileID: 2800000, guid: 249f3acbc3e8938469283ca6f8339f1e, type: 3}
-  - {fileID: 2800000, guid: 851e5f1ce426e4d49af17fa260a43ef8, type: 3}
-  - {fileID: 2800000, guid: 984acf0b4cf926b42bd1781d40c0cc28, type: 3}
-  - {fileID: 2800000, guid: 1f66d526d10328f4f8668b718b861d63, type: 3}
-  - {fileID: 2800000, guid: 4aead16355b18b8438e83592fdbdfb9c, type: 3}
-  - {fileID: 2800000, guid: f0797abe3e8d3bb44bde4b2e300f37aa, type: 3}
-  - {fileID: 2800000, guid: 1e27e1daaca2c51438d74dce955ab7e2, type: 3}
-  - {fileID: 2800000, guid: 2410c988ca47b464498b57dde938f11c, type: 3}
-  - {fileID: 2800000, guid: 42c9dd43d7c8a284b89c53fe6e76f5fe, type: 3}
-  - {fileID: 2800000, guid: 462e534ef1288c444ad72ed1634ee189, type: 3}
-  - {fileID: 2800000, guid: ee88d58a4b00e414c9a5c34a24560b39, type: 3}
-  - {fileID: 2800000, guid: 3385c9033b779f54c8ce6929b3afba6d, type: 3}
-  - {fileID: 2800000, guid: d8cdb61377de2e645b6628d08d117a91, type: 3}
-  - {fileID: 2800000, guid: 5e5e8edc4928f134daaedce97ede77a6, type: 3}
-  - {fileID: 2800000, guid: 18098e1c2e36921449f9d7fefca525a1, type: 3}
-  - {fileID: 2800000, guid: 0cf5550daa0eb8846ae2ae14a712f2d2, type: 3}
-  - {fileID: 2800000, guid: 1ce51df107eaec544a931ed20648b8fe, type: 3}
-  - {fileID: 2800000, guid: 21c7eda790d0a6344b90115ce3c8c54f, type: 3}
-  - {fileID: 2800000, guid: 56cc219a8fc46714d9e104696223ddf2, type: 3}
+  Paintings: []
   MissingPainting: {fileID: 2800000, guid: b5e77ff956e6dc242ad9c7d42c4830b0, type: 3}
   LevelFloorplans: []
 --- !u!1 &197931995

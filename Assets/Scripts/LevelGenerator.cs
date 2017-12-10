@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class LevelGenerator : MonoBehaviour {
 
 	public Texture[] Paintings;
@@ -11,8 +12,17 @@ public class LevelGenerator : MonoBehaviour {
 	public Dictionary<Floorplan, int> FloorplanPrefabs = new Dictionary<Floorplan, int>();
 	public List<Floorplan> LevelFloorplans = new List<Floorplan>();
 
+	public static LevelGenerator Instance;
+
 	// Use this for initialization
 	void Start () {
+
+		if (!Application.isPlaying)
+			return;
+
+		Instance = this;
+
+		ImageRegistry.UpdateImagesRemoveIncompatibles();
 
 		LoadPrefabs();
 
@@ -131,10 +141,10 @@ public class LevelGenerator : MonoBehaviour {
 		return NewPos;
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-
+		Instance = this;
 	}
 
 }

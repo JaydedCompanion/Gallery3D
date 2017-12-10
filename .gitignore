@@ -51,6 +51,7 @@ Temporary Items
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
+/[Bb]uilds/
 
 *.csproj
 *.unityproj
